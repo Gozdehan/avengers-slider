@@ -1,0 +1,15 @@
+*{margin:0; padding: 0; list-style: none;}
+img{width: 1000px;height:500px;}
+a{text-decoration: none; font:bold italic 24px Arial;}
+.slider{overflow:hidden; width: 1000px; height: 500px; position: relative;}
+.slider #pictures li{width: 1000px;height: 500px;}
+.slider #buttons{position: absolute;bottom: 20px; left: 10px;}
+.slider #buttons li{float:left; margin-right: 10px;}
+.slider #buttons li a{background-color:rgba(2,2,2,.5); 
+	padding: 5px 12px; border-radius: 100px; 
+	border: 1px solid #eee; color: white; transition: 500ms; }
+.slider #buttons li a:hover{background: white; opacity: 1;
+ border: 1px solid #000; color: #444; transition:500ms;}
+ .slider #buttons li.aktif a{background: white; opacity: 1; 
+ 	border: 1px solid #000; color: #444; transmition:500ms;}
+ 	
