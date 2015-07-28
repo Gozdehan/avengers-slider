@@ -1,0 +1,117 @@
+*{margin: 0; padding: 0; list-style: none; font-family: 'Roboto', sans-serif;}
+
+.slider-container{
+	position: relative;
+	height: 610px;
+	width: 812px;
+	background: pink;
+	
+}
+.slider-top{
+	position: absolute;
+	float: left;
+	width: 10000px;
+	height: 440px;
+	background: gray;
+}
+.slider-top li img{
+	float: left;
+	width: 532px;
+	height: 100%;
+}
+.black-block{
+   float: left;
+   height: 100%;
+   width: 280px;
+   background: black;
+}
+.slider-bottom{
+	position: absolute;
+	top: 440px;
+	width: 10000px;
+	height: 170px;	
+	background: white;
+}
+.bottom-pic{
+	float: left;
+	height: 166px;
+	width: 199px;
+	margin-left: 6px;
+	margin-top: 6px;
+}
+.bottom-pic img{
+	float: left;
+	height: 100%;
+	width: 199px;
+	z-index: 1;
+}
+.caption{
+	position: relative;
+	margin-top: 15px;
+	height: 365px;
+	padding: 30px;
+	background: black;
+	color: white;
+	z-index: 2;
+}
+.title{
+	font-size: 23px;
+	font-weight: 300px;
+}
+.info{
+	color:#8d8d8d;
+	font-style: italic;
+	font-size: 11px;
+	padding-top: 20px;
+}
+.category{
+	float: left;
+}
+.date{
+	margin-left: 7px;
+}
+.description{
+	width: 100%;
+	text-align: center;
+	margin-top: 12px;
+	color: white;
+	font-weight:50px;
+}
+.bottom-caption .description{
+	position: absolute;
+	bottom: 0;
+	height: 70px;
+}
+.bottom-caption{
+	position: absolute;
+	float: left;
+    margin-top: 97px;
+	height: 70px;
+	width: 199px;
+	background: black;
+	opacity: 0.7;
+	z-index: 4;
+}
+.bottom-caption:hover .description{
+	background: white;
+	opacity: 1;
+	cursor: hand;
+	color: black;
+}
+.left-control{
+	position: absolute;
+	height: 100%;
+	width: 60px;
+	background: pink;
+	margin-top: 6px;
+	z-index: 6;
+}
+.right-control{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 60px;
+	background: pink;
+	margin-top: 6px;
+	z-index: 6;
+}
