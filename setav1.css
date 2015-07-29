@@ -1,16 +1,31 @@
 *{margin: 0; padding: 0; list-style: none; font-family: 'Roboto', sans-serif;}
+.clearfix:after {
+	     visibility: hidden;
+	     display: block;
+	     font-size: 0;
+	     content: " ";
+	     clear: both;
+	     height: 0;
+	     }
+	.clearfix { display: inline-block; }
+	/* start commented backslash hack \*/
+	* html .clearfix { height: 1%; }
+	.clearfix { display: block; }
+	/* close commented backslash hack */
 
 .slider-container{
 	position: relative;
 	height: 613px;
 	width: 812px;
-    overflow: hidden;
+	overflow: hidden;
 }
 .slider-top{
 	position: absolute;
-	float: left;
 	width: 10000px;
 	height: 440px;
+}
+.slider-top li {
+	float: left;
 }
 .slider-top li img{
 	float: left;

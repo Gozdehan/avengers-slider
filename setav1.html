@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <title>SETA</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <link rel="stylesheet" type="text/css" href="setav1.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
@@ -9,7 +10,7 @@
 	<div class="slider-container">
        <div class="slider-top">
           <ul>
-             <li><a href="#"><div class="black-block"><div class="caption">
+             <li class="clearfix"><a href="#" data-no="1"><div class="black-block"><div class="caption">
                 <div class="title"><strong>İran Nükleer Mütabakatının Muhtemel Bölgesel Sonuçları</strong></div>
                 <div class="info">
                    <span class="category">Perspektif</span>
@@ -20,7 +21,7 @@
               </div>
              </div></div><img src="20150722190252_iran-mütabakat-perspektif_b.jpg"></a></li>
 
-             <li><a href="#"><div class="black-block"><div class="caption">
+             <li class="clearfix"><a href="#" data-no="2"><div class="black-block"><div class="caption">
                 <div class="title"><strong>5 Soru: İran Nükleer Anlaşmasının Ekonomik Boyutu</strong></div>
                 <div class="info">
                    <span class="category">Yorum</span>
@@ -33,7 +34,7 @@
              </div><img src="20150721131015_5soru-copy.jpg"></a></li>
 
 
-             <li><a href="#"><div class="black-block"><div class="caption">
+             <li class="clearfix"><a href="#" data-no="3"><div class="black-block"><div class="caption">
                 <div class="title"><strong>Türkiye’nin Koalisyon Tecrübesi: Modeller ve Siyasal Gerçeklikler</strong></div>
                 <div class="info">
                    <span class="category">Perspektif</span>
@@ -45,8 +46,7 @@
              </div>
              </div><img src="20150716003527_turkiye’nin-koalisyon-tecrubesi_b.jpg"></a></li>
 
-
-             <li><a href="#"><div class="black-block"><div class="caption">
+            <li class="clearfix"><a href="#" data-no="4"><div class="black-block"><div class="caption">
                 <div class="title"><strong>7 Haziran 2015 Seçimi ve Sonrası</strong></div>
                 <div class="info">
                    <span class="category">Analiz</span>
@@ -59,7 +59,7 @@
              </div><img src="20150715113829_134_7haziran_kapak_b.jpg"></a></li>
 
 
-             <li><a href="#"><div class="black-block"><div class="caption">
+             <li class="clearfix"><a href="#" data-no="5"><div class="black-block"><div class="caption">
                 <div class="title"><strong>Denetim ve Özgürlük İkileminde İnternet Erişimi</strong></div>
                 <div class="info">
                    <span class="category">Analiz</span>
@@ -72,7 +72,7 @@
              </div><img src="20150713172302_133_internet_erisim_kapak_b.jpg"></a></li>
 
 
-             <li><a href="#"><div class="black-block"><div class="caption">
+             <li class="clearfix"><a href="#" data-no="6"><div class="black-block"><div class="caption">
                 <div class="title"><strong>Rusya-AB-Türkiye Üçgeninde Türk Akımı</strong></div>
                 <div class="info">
                    <span class="category">Perspektif</span>
@@ -85,7 +85,7 @@
             </div><img src="20150707142632_banner.jpg"></a></li>
 
 
-             <li><a href="#"><div class="black-block"><div class="caption">
+             <li class="clearfix"><a href="#" data-no="7"><div class="black-block"><div class="caption">
                 <div class="title"><strong>Afganistan Siyasetini Anlama Kılavuzu</strong></div>
                 <div class="info">
                    <span class="category">Rapor</span>
@@ -98,29 +98,61 @@
              </div><img src="20150706165936_afganistan_banner.jpg"></a></li>
           </ul>
        </div>
+ 
              <div class="slider-bottom-container">
              	 <a href="#" class="left-control"><div class="scope"><span class="fa fa-angle-left"></span></div></a>
        	         <a href="#" class="right-control"><div class="scope"><span class="fa fa-angle-right"></span></div></a>
 
                  <div class="slider-bottom">
            <ul style="margin-left:-6px;"> 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><h4>İran Nükleer Mütabakatının Muhtemel Bölgesel Sonuçları</h4></div><img src="20150722190252_iran-mütabakat-perspektif_b.jpg"></div></a></li>
+             <li><a href="#" data-no="1"><div class="bottom-pic"><div class="bottom-caption"><h4>İran Nükleer Mütabakatının Muhtemel Bölgesel Sonuçları</h4></div><img src="20150722190252_iran-mütabakat-perspektif_b.jpg"></div></a></li>
 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><h4>5 Soru: İran Nükleer Anlaşmasının Ekonomik Boyutu</h4></div><img src="20150721131015_5soru-copy.jpg"></div></a></li>
+             <li><a href="#" data-no="2"><div class="bottom-pic"><div class="bottom-caption"><h4>5 Soru: İran Nükleer Anlaşmasının Ekonomik Boyutu</h4></div><img src="20150721131015_5soru-copy.jpg"></div></a></li>
 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><h4>Türkiye’nin Koalisyon Tecrübesi: Modeller ve Siyasal Gerçeklikler</h4></div><img src="20150716003527_turkiye’nin-koalisyon-tecrubesi_b.jpg"></div></a></li>
+             <li><a href="#" data-no="3"><div class="bottom-pic"><div class="bottom-caption"><h4>Türkiye’nin Koalisyon Tecrübesi: Modeller ve Siyasal Gerçeklikler</h4></div><img src="20150716003527_turkiye’nin-koalisyon-tecrubesi_b.jpg"></div></a></li>
 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><h4>7 Haziran 2015 Seçimi ve Sonrası</h4></div><img src="20150715113829_134_7haziran_kapak_b.jpg"></div></a></li>
+             <li><a href="#" data-no="4"><div class="bottom-pic"><div class="bottom-caption"><h4>7 Haziran 2015 Seçimi ve Sonrası</h4></div><img src="20150715113829_134_7haziran_kapak_b.jpg"></div></a></li>
 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><h4>Denetim ve Özgürlük İkileminde İnternet Erişimi</h4></div><img src="20150713172302_133_internet_erisim_kapak_b.jpg"></div></a></li>
+             <li><a href="#" data-no="5"><div class="bottom-pic"><div class="bottom-caption"><h4>Denetim ve Özgürlük İkileminde İnternet Erişimi</h4></div><img src="20150713172302_133_internet_erisim_kapak_b.jpg"></div></a></li>
 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><h4>Rusya-AB-Türkiye Üçgeninde Türk Akımı</h4></div><img src="20150707142632_banner.jpg"></div></a></li>
+             <li><a href="#" data-no="6"><div class="bottom-pic"><div class="bottom-caption"><h4>Rusya-AB-Türkiye Üçgeninde Türk Akımı</h4></div><img src="20150707142632_banner.jpg"></div></a></li>
 
-             <li><a href="#"><div class="bottom-pic"><div class="bottom-caption"><div class="description">Afganistan Siyasetini Anlama Kılavuzu</div></div><img src="20150706165936_afganistan_banner.jpg"></div></a></li>
+             <li><a href="#" data-no="7"><div class="bottom-pic"><div class="bottom-caption"><div class="description">Afganistan Siyasetini Anlama Kılavuzu</div></div><img src="20150706165936_afganistan_banner.jpg"></div></a></li>
            </ul>
        </div>
              </div>
           
     </div>
+
+    <script type="text/javascript">
+
+         $(document).ready(function(){
+           var i=0;
+           var tumGenislik=0;
+           var genislik=$(".slider-top li").width();
+           function animasyon(px){
+           $(".slider-top").stop(false,false).animate({
+                left:px*-1},1000);
+
+         }
+
+        var zamanlayici = setInterval(function(){
+             tumGenislik=i*genislik;
+             console.log(tumGenislik);
+             if(i==6){
+              i=-1;
+             }
+             animasyon(tumGenislik);
+             i++;
+         },2000);
+      }); 
+
+    $(".slider-bottom a").click(function () {
+        var element = $(this);
+        alert(element.attr("data-no"));
+      });
+
+
+    </script>
 </body>
 </html>
