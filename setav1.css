@@ -11,7 +11,6 @@
 	float: left;
 	width: 10000px;
 	height: 440px;
-	background: gray;
 }
 .slider-top li img{
 	float: left;
@@ -84,7 +83,7 @@
 .bottom-caption{
 	position: absolute;
 	float: left;
-    margin-top: 97px;
+    margin-top: 92px;
 	height: 70px;
 	width: 199px;
 	z-index: 4;
