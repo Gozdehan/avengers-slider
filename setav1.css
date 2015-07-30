@@ -17,7 +17,7 @@
 	position: relative;
 	height: 613px;
 	width: 812px;
-	overflow: hidden;
+    overflow: hidden;
 }
 .slider-top{
 	position: absolute;
@@ -48,6 +48,9 @@
 	width: 10000px;
 	height: 173px;	
 	background: white;
+}
+.slider-bottom li{
+  float: left;
 }
 .bottom-pic{
 	float: left;
@@ -161,3 +164,7 @@
 .left-control:hover, .right-control:hover .scope{
 	background-color: rgba(255, 255, 255, 0.47);
  }
+
+.slider-bottom-sub {
+	position: absolute;
+}
