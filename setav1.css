@@ -15,14 +15,14 @@
 
 .slider-container{
 	position: relative;
-	height: 613px;
+	height: 515px;
 	width: 812px;
-    overflow: hidden;
+   overflow: hidden;
 }
 .slider-top{
 	position: absolute;
 	width: 10000px;
-	height: 440px;
+	height: 355px;
 }
 .slider-top li {
 	float: left;
@@ -40,13 +40,13 @@
 }
 .slider-bottom-container{
 	position: relative;
-    top: 440px;
+    top: 355px;
     height: 173px;
 }
 .slider-bottom{
 	position: absolute;
 	width: 10000px;
-	height: 173px;	
+	height: 154px;	
 	background: white;
 }
 .slider-bottom li{
@@ -54,7 +54,7 @@
 }
 .bottom-pic{
 	float: left;
-	height: 167px;
+	height: 154px;
 	width: 199px;
 	margin-left: 6px;
 	margin-top: 6px;
@@ -67,22 +67,21 @@
 }
 .caption{
 	position: relative;
-	margin-top: 15px;
-	height: 365px;
+	height: 295px;
 	padding: 30px;
 	background: black;
 	color: white;
 	z-index: 2;
 }
 .title{
-	font-size: 23px;
-	font-weight: 300px;
+	font-size: 25px;
+	margin-top: -12px;
 }
 .info{
 	color:#8d8d8d;
 	font-style: italic;
 	font-size: 11px;
-	padding-top: 20px;
+	padding-top: 12px;
 }
 .category{
 	float: left;
@@ -92,7 +91,7 @@
 }
 .description{
 	width: 100%;
-	text-align: center;
+	text-align: inherit;
 	margin-top: 12px;
 	color: white;
 	font-weight:50px;
@@ -101,18 +100,20 @@
 .bottom-caption{
 	position: absolute;
 	float: left;
-    margin-top: 92px;
-	height: 70px;
+    margin-top: 84px;
+	height: 56px;
 	width: 199px;
 	z-index: 4;
 }
 .bottom-caption h4{
 	padding-top: 5px;
 	background: rgba(0, 0, 0, 0.6);
-	font-size: 15px;
+	font-size: 13px;
 	color: white;
-	text-align: center;
+	text-align: left;
+	padding-left: 8px;
 	height: 100%;
+	line-height: 20px;
 }
 .slider-bottom a:hover h4{
 	background: white;
