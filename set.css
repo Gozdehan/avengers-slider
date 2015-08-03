@@ -17,21 +17,21 @@
 	.ana-ekran{
 		position: relative;
 		float: left;
-		width: 800;
-		height: 600;
+		width: 810;
+		height:630;
 		overflow: hidden;
 	}
 	.ust-ekran{
 		float: left;
 		position: absolute;
 		width: 15000;
-		height: 400;
-		
-        
-	}
+		height: 355;
+        }
 	.ust-ekran-sol{
-		float: left;
-		background-color: black;
+	background-color: black;
+	 float: left;
+	 width: 264;
+	 height: 355;
 	}
 	.ust-ekran-sag{
 		float: left;
@@ -39,9 +39,9 @@
 	}
 	.ust-ekran img{
 	float:left;
-	
-	width: 550;
-	height: 100%;
+	position: relative;
+	width: 546;
+	height: 355;
 	}
 	.alt-ekran{
 		position: absolute;
@@ -49,7 +49,10 @@
 		height: 200;
 		float: left;
 		top:400;
+	    margin: 2px;
+	    z-index: 1;
 	}
+	
 	.alt-ekran img{
 	float: left;
 	width: 200;
@@ -58,11 +61,17 @@
 	padding-left: 4px;
 	z-index: 1;
 	}
-	.ust-ekran-sol{
-	 float: left;
-	 width: 250;
-	 height: 400;
+	.alt-ekran img:hover{
+     cursor: hand;
 	}
+	.alt-ekran a:hover .alt-menu{
+		background-color: white;
+        color: black;
+        opacity:0.8;
+        cursor: hand;
+
+	}
+
 
 .manset-listesi li {
 	float: left;
@@ -77,16 +86,15 @@ a{
 p{
 	font-size: 14;
 }
-.alt-konteynir{
-	float: left;
-	width: 200;
-	height:204;
 
-}
 .alt-menu{
 
- float: left;
+    float: left;
 	width: 200;
+	text-align:left;
+	font-size: 14;
+	font-style: arial;
+	color: white;
 	background-color: black;
 	color: white;
 	opacity: 0.8;
@@ -94,12 +102,83 @@ p{
 	position: absolute;
 	top:150;
 	z-index: 2;
-	padding-top: 4px;
-	padding-left: 4px;
-	
+	margin: 2px;
+	padding-left: 2px;
+	padding-top: 4px;	
 }
 .alt-menu:hover{
 background-color: white;
 color: black;
 opacity:0.8;
+cursor: hand;
+margin-left: 2px;
+}
+
+.icon-kutu-1{
+	position: absolute;
+	top:455;
+	left:25;
+	top:400;
+	left: 0;
+	width: 60;
+	height: 194px;
+	z-index: 3;
+	margin-top: 6;
+	opacity: 0.5;
+	
+}
+.icon-kutu-1:hover{
+	background: rgba(255, 255, 255, 0.72);
+	cursor: hand;
+
+}
+
+.icon-kutu-2{
+	color: white;
+	position: absolute;
+	top:455;
+	left: 742;
+	width:60;
+	height: 194px;
+	z-index: 3;
+	margin-top: 6;
+	top:400;
+	opacity: 0.5;
+}
+.icon-kutu-2:hover{
+	background: rgba(255, 255, 255, 0.72);
+    cursor: hand;
+}
+.fa-1{
+	position: absolute;
+	top:495;
+	left:25;
+	font-size: 20;
+	color: white;
+	font-family: arial;
+	z-index: 8;
+	cursor: hand;
+}
+.fa-2{
+	position: absolute;
+	top:495;
+	left:765;
+	font-size: 20;
+	color: white;
+	font-family: arial;
+	z-index: 8;
+	cursor: hand;
+}
+.alt-ekran li {
+	float: left;
+}
+.alt-ekran ul{
+	float: left;
+}
+
+.ul-kapsam{
+	position: absolute;
+}
+.ul-kapsam ul{
+float: left;
 }
