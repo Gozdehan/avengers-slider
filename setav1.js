@@ -16,6 +16,7 @@ $(document).ready(function(){
              i++;
          },5000);
 
+
         $(".slider-bottom-sub a").click(function () {
           clearInterval(zamanlayici);
 
@@ -29,8 +30,8 @@ $(document).ready(function(){
         }); 
 
       }); 
-
-     $(document).ready(function(){
+       
+        $(document).ready(function(){
         
         var click=0;
         var allWidth=0;
@@ -43,7 +44,7 @@ $(document).ready(function(){
        
        $(".left-control").click(function(){
         allWidth=click*width;
-         $($(".slider-bottom ul")[1]).detach().prependTo($($(".slider-bottom .slider-bottom-sub")))
+        $($(".slider-bottom ul")[4]).detach().prependTo($($(".slider-bottom .slider-bottom-sub")))
          $(".slider-bottom .slider-bottom-sub").css("left", "-820px");
          $(".slider-bottom .slider-bottom-sub").animate({left: 0}, 1000);
          animasyon2(allWidth);
@@ -52,11 +53,14 @@ $(document).ready(function(){
      
        }); 
 
+
+
       $(document).ready(function(){
         
         var click=0;
         var allWidth=0;
         var width=$(".slider-bottom ul li").width()*4;
+        
         function animasyon2(px){
           $(".slider-bottom ul").stop(false,false).animate({
             left:px},1000);
@@ -64,12 +68,18 @@ $(document).ready(function(){
 
        $(".right-control").click(function(){
         allWidth=click*width;
-         
+
          $($(".slider-bottom ul")[0]).detach().appendTo($(".slider-bottom .slider-bottom-sub"));
-         $(".slider-bottom .slider-bottom-sub").css("left", "0px");
-         $(".slider-bottom .slider-bottom-sub").animate({left: -820}, 1000);
+         var element = $(".slider-bottom-sub");
+         var poz = element.position().left;
+         element.css("left", "0px");
+         element.animate({left: -820}, 1000); 
+
          animasyon2(allWidth);
-         click++;
+         console.log(allWidth);
+         ++click;
        });
 
        }); 
+
+
