@@ -1,4 +1,4 @@
-$(document).ready(function(){
+ $(document).ready(function(){
            var i=0;
            var tumGenislik=0;
            var genislik=$(".slider-top li").width();
@@ -7,14 +7,14 @@ $(document).ready(function(){
                 left:px*-1},2000);
          }
 
-        var zamanlayici = setInterval(function(){
+       var zamanlayici = setInterval(function(){
              tumGenislik=i*genislik;
              if(i==6){
               i=-1;
              }
              animasyon(tumGenislik);
              i++;
-         },5000);
+         },5000); 
 
 
         $(".slider-bottom-sub a").click(function () {
@@ -36,23 +36,33 @@ $(document).ready(function(){
         var click=0;
         var allWidth=0;
         var width=$(".slider-bottom ul li").width()*4;
+        var animasyon = false;
 
-        function animasyon2(px){
+        
+         function animasyon2(px){
           $(".slider-bottom ul").stop(false,false).animate({
             left:px*-1},1000);
         }
-       
-       $(".left-control").click(function(){
+
+        $(".left-control").click(function(){
+            if (true == animasyon) {
+              return;
+          }
+
         allWidth=click*width;
+        animasyon=true;
+
         $($(".slider-bottom ul")[1]).detach().prependTo($($(".slider-bottom .slider-bottom-sub")))
          $(".slider-bottom .slider-bottom-sub").css("left", "-820px");
-         $(".slider-bottom .slider-bottom-sub").animate({left: 0}, 1000);
+         $(".slider-bottom .slider-bottom-sub").animate({left: 0}, 1000, function (){
+           animasyon=false;
+         });
          animasyon2(allWidth);
          click++;
        });
-     
-       }); 
 
+
+      });
 
 
       $(document).ready(function(){
@@ -60,6 +70,7 @@ $(document).ready(function(){
         var click=0;
         var allWidth=0;
         var width=$(".slider-bottom ul li").width()*4;
+        var animasyon = false;
         
         function animasyon2(px){
           $(".slider-bottom ul").stop(false,false).animate({
@@ -67,18 +78,27 @@ $(document).ready(function(){
         }
 
        $(".right-control").click(function(){
-        allWidth=click*width;
+          if (true == animasyon) {
+            return;
+          }
+
+          allWidth=click*width;
+          animasyon = true;
 
          if ($(".slider-bottom .slider-bottom-sub").css('left')!='-820px') {
-             $(".slider-bottom .slider-bottom-sub").animate({left: -820}, 1000);
+             $(".slider-bottom .slider-bottom-sub").animate({left: -820}, 1000, function () {
+              animasyon = false;
+             });
           }
          else {
             $($(".slider-bottom ul")[0]).detach().appendTo($(".slider-bottom .slider-bottom-sub"));
             $(".slider-bottom .slider-bottom-sub").css("left", "0px");
-            $(".slider-bottom .slider-bottom-sub").animate({left: -820}, 1000);
+            $(".slider-bottom .slider-bottom-sub").animate({left: -820}, 1000, function () {
+              animasyon = false;
+            });
         }
 
-         animasyon2(allWidth);
+         //animasyon2(allWidth);
          console.log(allWidth);
          ++click;
        });
